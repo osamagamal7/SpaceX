@@ -1,0 +1,70 @@
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  margin: auto;
+  place-items: center;
+}
+
+.submitButton[disabled] {
+  border: 1px solid #999999;
+  padding: 10px 16px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  background-color: #cccccc;
+  color: #666666;
+}
+.submitButton {
+  background: none;
+  color: var(--secondary);
+  padding: 10px 16px;
+  border: 2px solid var(--secondary);
+  border-radius: 20px;
+  text-transform: uppercase;
+  grid-column: 3/7;
+  width: 120px;
+  grid-row: 2;
+}
+.submitButton:hover:enabled {
+  background-color: var(--secondary);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.inputForm {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 2px solid var(--secondary);
+  outline: none;
+  color: var(--secondary);
+  margin: 15px 0;
+  grid-column: 3/7;
+  grid-row: 1;
+  align-self: center;
+  width: 200px;
+  max-width: 250px;
+}
+
+@media (min-width: 768px) {
+  .inputForm {
+    width: 300px;
+    max-width: 350px;
+  }
+  .submitButton {
+    width: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  .formGrid {
+    margin: 50px auto;
+  }
+  .inputForm {
+    max-width: 300px;
+    grid-column: 3/6;
+  }
+  .submitButton {
+    grid-column: 6/7;
+    grid-row: 1;
+  }
+}

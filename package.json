@@ -1,0 +1,39 @@
+{
+  "name": "bitgrip-job-application-project-frontend-spacex",
+  "description": "BITGRIP Job Application Project: SpaceX launches",
+  "version": "0.2.4",
+  "author": "Thomas Schulz <thomas.schulz@bitgrip.de> (https://www.bitgrip.de/)",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.2.3",
+    "@types/node": "^18.11.9",
+    "@types/react-dom": "^18.0.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.9.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^13.0.0",
+    "@types/react": "^18.0.25",
+    "msw": "^0.49.0"
+  }
+}
